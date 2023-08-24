@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozinha Criativa - Compartilhar receita</title>
+</head>
+<body>
+    <header>
+        <div>
+            <table width="900" align="center">
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="/">
+                                <img
+                                    src="./assets/images/logo.png"
+                                    alt="Cozinha Criativa"
+                                    width="230px"
+                                >
+                            </a>
+                        </td>
+                        <td align="right">
+                            <nav>
+                                <a href="/sobremesas/index.html">Sobremesas</a> |
+                                <a href="/carnes/index.html">Carnes</a> |
+                                <a href="/massas/index.html">Massas</a> |
+                                <a href="/bebidas/index.html">Bebidas</a> |
+                                <a href="/adicionar-receita.html">Compartilhar receita</a>
+                            </nav>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </header>
+
+    <main>
+        <header>
+            <table width="900" align="center">
+                <tbody>
+                    <tr>
+                        <td>
+                            <img
+                                src="/assets/images/banner_compartilhar_receita.jpg"
+                                alt="Compartilhar Receita"
+                                height="400px"
+                                width="100%"
+                            >
+                            <p>Compartilhe sua receita especial! Nesta página, você tem a oportunidade de adicionar a sua própria receita à Cozinha Criativa. Compartilhe seus pratos favoritos e inspire outros entusiastas culinários. Deixe sua marca na comunidade gastronômica, mostrando sua criatividade na cozinha. Compartilhe sua paixão pela culinária com o mundo!</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </header>
+
+        <form enctype="multipart/form-data" action="" method="post">
+            <table width="900" align="center">
+                <tbody>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <hr>
+                            <h1>Compartilhar minha receita</h1>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="nomeReceita">Nome Receita</label><br>
+                            <input type="text" id="nomeReceita" name="nomeReceita">
+                        </td>
+                        <td>
+                            <label for="categorias">Categorias</label><br>
+                            <select name="categorias" id="categorias">
+                                <option value="1">Sobremesa</option>
+                                <option value="2">Carne</option>
+                                <option value="3">Massa</option>
+                                <option value="4">Bebida</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="tempoPreparo">Tempo de preparo</label><br>
+                            <input type="text" id="tempoPreparo" name="tempoPreparo">
+                        </td>
+                        <td>
+                            <label for="dificuldade">Dificuldade</label><br>
+                            <select name="dificuldade" id="dificuldade">
+                                <option value="1">Fácil</option>
+                                <option value="2">Médio</option>
+                                <option value="3">Difícil</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="nomeAutor">Nome do Autor</label><br>
+                            <input type="text" id="nomeAutor" name="nomeAutor">
+                        </td>
+                        <td>
+                            <label for="emailAutor">E-mail do Autor</label><br>
+                            <input type="email" id="emailAutor" name="emailAutor">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <label for="ingredientes">Ingredientes</label><br>
+                            <textarea 
+                                name="ingredientes"
+                                id="ingredientes"
+                                rows="4" 
+                                cols="70"
+                            ></textarea>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <label for="modoPreparo">Modo de Preparo</label><br>
+                            <textarea 
+                                name="modoPreparo"
+                                id="modoPreparo"
+                                rows="4" 
+                                cols="70"
+                            ></textarea>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <label for="imagemReceita">Imagem da receita</label><br>
+                            <input type="file" name="imagemReceita" id="imagemReceita">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" align="right">
+                            <button type="submit">Enviar</button>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+        </form>
+    </main>
+    
+    <footer>
+        <div align="center">
+            <address>
+                <p>Endereço Fictício, 100, Cidade Fictícia, Estado</p>
+                <p>E-mail: jorge@argus-academy.com</p>
+                <p>Telefone: (11) 91234-5678</p>
+                <p>&copy; 2023 Cozinha Criativa. Todos os direitos reservados.</p>
+            </address>
+        </div>
+    </footer>
+</body>
+</html>
